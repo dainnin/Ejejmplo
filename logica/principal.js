@@ -97,7 +97,7 @@ async function llamarObjeto(x) {
 
 
  menHeader = Object.values(macFormPrin.header.aLink).map(
-    aLink => `<li><a href="${aLink[1]}">${aLink[0]}</a><li>`
+    aLink => `<li><a href="${aLink[1]}">${aLink[0]}</a></li>`
 ).join('')
 HeaderC = cElement('header',{className:'header',className:'header',},`
 <picture>
@@ -108,8 +108,7 @@ HeaderC = cElement('header',{className:'header',className:'header',},`
 
 <ul>
 <p style='color: burlywood !important;'>MENU</p>
-${menHeader,
-console.log(menHeader)}
+${menHeader}
 </ul>
 `
 )
